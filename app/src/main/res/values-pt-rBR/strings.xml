@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Buy and Sell</string>
+    <string name="navigation_drawer_open">Abra a gaveta de navegação</string>
+    <string name="navigation_drawer_close">"Fechar gaveta de navegação "</string>
+    <string name="exit">Sair</string>
+    <string name="map">Mapa</string>
+    <string name="only_items_that_record_sales_n_after_the">Apenas itens que registram vendas \n após o</string>
+    <string name="qty_profit">Qtd./Lucro</string>
+    <string name="bottom_top">Bottom/Top</string>
+    <string name="graph_item_s_performance">Desempenho</string>
+    <string name="graph_item_s_availability">Disponibilidade</string>
+    <string name="graph_all_item_s_availability">Disponibilidade de todos os itens</string>
+    <string name="graph_subcateg">Subcateg</string>
+    <string name="subcat">Subcat:</string>
+    <string name="graph_categor">Categ</string>
+    <string name="categ">Categ:</string>
+    <string name="graph_classes">Classes</string>
+    <string name="graph_all_item_s_performance">Gráfico do desempenho de todos os itens</string>
+    <string name="LasClases">Classes:</string>
+    <string name="graph_customers">Clientes</string>
+    <string name="download_purchases_and_sales">Baixar as vendas</string>
+    <string name="status">Status</string>
+    <string name="graph_suppliers">Fornecedores</string>
+</resources>

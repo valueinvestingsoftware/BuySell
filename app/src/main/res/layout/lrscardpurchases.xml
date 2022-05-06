@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvPurchases"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <Button
+                android:id="@+id/btnDeletePurchasesSales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="4dp"
+                android:layout_below="@+id/txtCardPitemName"
+                />
+
+            <Button
+                android:id="@+id/btnEditPurchasesSales"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCardPitemName"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/btnDeletePurchasesSales"
+                android:text="Edit" />
+
+            <TextView
+                android:id="@+id/txtCardPSupplierName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="false"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/llLabels"
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/ivItemCardP"
+                android:text="Supplier" />
+
+            <ImageView
+                android:id="@+id/ivItemCardP"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                app:srcCompat="@drawable/viewpurchases" />
+
+            <TextView
+                android:id="@+id/txtCardPitemName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Item Name"
+                android:layout_alignParentTop="false"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_below="@id/txtCardPSupplierName"
+                android:orientation="vertical"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/ivItemCardP"/>
+
+
+            <LinearLayout
+                android:id="@+id/llValues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@id/llLabels"
+                android:layout_toRightOf="@+id/llLabels"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtCardPQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity" />
+
+                <TextView
+                    android:id="@+id/txtCardPprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Price" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llLabels"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@id/ivItemCardP"
+                android:layout_toRightOf="@+id/ivItemCardP"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lblCardPQuantity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Quantity" />
+
+                <TextView
+                    android:id="@+id/lblCardPPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Price" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

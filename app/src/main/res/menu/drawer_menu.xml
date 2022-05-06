@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/customers"
+            android:title="Create customers"
+            android:icon="@drawable/customer"/>
+        <item android:id="@+id/viewCustomers"
+            android:title="View customers"
+            android:icon="@drawable/viewcustomers"/>
+        <item android:id="@+id/suppliers"
+            android:title="Create Suppliers"
+            android:icon="@drawable/purchase"/>
+        <item android:id="@+id/viewSuppliers"
+            android:title="View Suppliers"
+            android:icon="@drawable/viewsuppliers"/>
+        <item android:id="@+id/items"
+            android:title="Create Items"
+            android:icon="@drawable/item"/>
+        <item android:id="@+id/viewItems"
+            android:title="View Items"
+            android:icon="@drawable/viewitems"/>
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/sale"
+            android:title="Sale"
+            android:icon="@drawable/sale"/>
+
+        <item android:id="@+id/ViewSales"
+            android:title="View sales"
+            android:icon="@drawable/viewsales"/>
+
+        <item android:id="@+id/purchase"
+            android:title="Purchase"
+            android:icon="@drawable/purchase"/>
+
+        <item android:id="@+id/ViewPurchase"
+            android:title="View purchases"
+            android:icon="@drawable/viewpurchases"/>
+
+    </group>
+
+    <group android:checkableBehavior="single">
+           <item android:id="@+id/Sync"
+            android:title="Sync"
+            android:icon="@drawable/sync"/>
+
+        <item android:id="@+id/Graphs"
+            android:title="Graphs"
+            android:icon="@drawable/graphs"/>
+    </group>
+
+       </menu>
+

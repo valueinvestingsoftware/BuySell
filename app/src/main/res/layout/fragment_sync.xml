@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SyncFragment">
+
+    <Button
+        android:id="@+id/btnUpdateSalesPerson"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="46dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="16dp"
+        app:backgroundTint="@android:color/holo_orange_dark"
+        android:text=""
+        android:textSize="12sp"
+        app:icon="@android:drawable/ic_menu_save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnUpdateIp" />
+
+    <TextView
+        android:id="@+id/lblIp2"
+        android:layout_width="96dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="Salesperson:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/spSalesPersons" />
+
+    <Button
+        android:id="@+id/btnSyncUpItems"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        app:icon="@android:drawable/stat_sys_upload"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="1. Items"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSyncUpClients"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSyncDownItems"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        app:icon="@android:drawable/stat_sys_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="2. Items"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSyncDownClients" />
+
+    <Button
+        android:id="@+id/btnSyncUpClients"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        app:icon="@android:drawable/stat_sys_upload"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="2. Suppliers and Customers"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnSyncUpPurchasesSales"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnSyncDownClients"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="343dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="1. Customers and suppliers"
+        android:textSize="12sp"
+        app:icon="@android:drawable/stat_sys_download"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSyncUpPurchasesSales"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        app:icon="@android:drawable/stat_sys_upload"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:text="3. PURCHASES AND SALES"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lblIp"
+        android:layout_width="31dp"
+        android:layout_height="18dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="52dp"
+        android:text="IP:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSyncDownItems" />
+
+    <EditText
+        android:id="@+id/txtIp"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/btnUpdateIp"
+        app:layout_constraintStart_toEndOf="@+id/lblIp"
+        app:layout_constraintTop_toBottomOf="@+id/btnSyncDownItems" />
+
+    <Button
+        android:id="@+id/btnUpdateIp"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="46dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="16dp"
+        android:text=""
+        android:textSize="12sp"
+        app:icon="@android:drawable/ic_menu_save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtIp" />
+
+    <Button
+        android:id="@+id/btnCheckInServer"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Check in server"
+        app:icon="@android:drawable/ic_dialog_info"
+        app:layout_constraintBottom_toTopOf="@+id/btnSyncUpItems"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spSalesPersons"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/btnUpdateSalesPerson"
+        app:layout_constraintStart_toEndOf="@+id/lblIp2"
+        app:layout_constraintTop_toBottomOf="@+id/txtIp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

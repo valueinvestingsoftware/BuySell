@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvPurchases"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <Button
+                android:id="@+id/btnEditFromDeleteSupplier"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llValues"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/btnWhatsappFromDeleteSupplier"
+                android:text="Edit" />
+
+            <Button
+                android:id="@+id/btnDeletePurchasesSales"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnWhatsappFromDeleteSupplier"
+                android:layout_alignParentBottom="@+id/btnWhatsappFromDeleteSupplier"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:text="Delete" />
+
+            <Button
+                android:id="@+id/btnMapFromDeleteSupplier"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnWhatsappFromDeleteSupplier"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/btnDeletePurchasesSales"
+                android:text="Map" />
+
+            <Button
+                android:id="@+id/btnRouteFromDeleteSupplier"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnWhatsappFromDeleteSupplier"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@+id/btnMapFromDeleteSupplier"
+                android:text="Route" />
+
+            <Button
+                android:id="@+id/btnWhatsappFromDeleteSupplier"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llValues"
+                android:layout_alignParentBottom="@+id/ivCardSupplier"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:text="Whatsapp" />
+
+            <ImageView
+                android:id="@+id/ivCardSupplier"
+                android:layout_width="134dp"
+                android:layout_height="93dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="6dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                app:srcCompat="@drawable/person" />
+
+            <LinearLayout
+                android:id="@+id/llValues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="2dp"
+                android:layout_toRightOf="@+id/ivCardSupplier"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtCardSupplierName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@+id/txtCardSupplierId"
+                    android:text="Supplier" />
+
+                <TextView
+                    android:id="@+id/txtCardAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtCardPSupplierName"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:orientation="vertical"
+                    android:layout_toRightOf="@+id/txtCardSupplierId"
+                    android:text="Address" />
+
+                <TextView
+                    android:id="@+id/txtCardEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@+id/txtCardSupplierId"
+                    android:text="Email" />
+
+                <TextView
+                    android:id="@+id/txtCardPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@+id/txtCardSupplierId"
+                    android:text="Phone number" />
+
+                <TextView
+                    android:id="@+id/txtCardCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@+id/txtCardSupplierId"
+                    android:text="City" />
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

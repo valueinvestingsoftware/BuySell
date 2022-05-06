@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Buy and Sell</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="exit">Exit</string>
+    <string name="map">Map</string>
+    <string name="only_items_that_record_sales_n_after_the">Only items that record sales \n after the:</string>
+    <string name="qty_profit">Qty/Profit</string>
+    <string name="bottom_top">Bottom/Top</string>
+    <string name="graph_item_s_performance">Performance</string>
+    <string name="graph_item_s_availability">Availability</string>
+    <string name="graph_all_item_s_availability">Graph availability of all items</string>
+    <string name="graph_subcateg">Subcateg</string>
+    <string name="subcat">Subcat:</string>
+    <string name="graph_categor">Categor.</string>
+    <string name="categ">Categ:</string>
+    <string name="graph_classes">Classes</string>
+    <string name="graph_all_item_s_performance">Graph all item\'s performance</string>
+    <string name="graph_customers">Customers</string>
+    <string name="LasClases">Class</string>
+    <string name="download_purchases_and_sales">Download sales</string>
+    <string name="status">Status</string>
+    <string name="graph_suppliers">Suppliers</string>
+    <string name="route">ROUTE</string>
+</resources>

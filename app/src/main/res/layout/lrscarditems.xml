@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvPurchases"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <Button
+                android:id="@+id/btnDeleteItemsView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCardItemNameView"
+                android:layout_marginTop="8dp"
+                android:layout_centerInParent="true"
+                android:text="Delete" />
+
+            <Button
+                android:id="@+id/btnEditItemsView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/btnDeleteItemsView"
+                android:layout_below="@+id/txtCardItemNameView"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="16dp"
+                android:text="Edit" />
+
+            <ImageView
+                android:id="@+id/ivItemCardView"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="6dp"
+                android:layout_marginLeft="6dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                app:srcCompat="@drawable/viewpurchases" />
+
+
+            <TextView
+                android:id="@+id/txtCardItemNameView"
+                android:layout_width="242dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="false"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_toRightOf="@+id/ivItemCardView"
+                android:orientation="vertical"
+                android:text="Item Name" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
